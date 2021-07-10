@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /*10px*/
+}
+
+/* ::selection{
+    user-select: none;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+.box {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.box2 {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.box1 {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+
+/* --------------------------------------------navbar------------------------------------------------------------------------------ */
+
+.navbar input[type='checkbox'], .navbar .lines {
+    display: none;
+}
+
+.navbar {
+    color: #000;
+    /* background: #f4f4f4; */
+    /* background-color: #8EC5FC; */
+    /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    opacity: 0.75;
+    z-index: 99;
+    /* background-color: rgba(255, 255, 255, 0.432); */
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 8px 0 #aaa;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.navc {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    /* overflow-x: auto; */
+}
+
+.menu {
+    order: 2;
+    display: flex;
+}
+
+.logo {
+    order: 1;
+    margin: 0.2rem 0;
+    /* padding: 0.2rem; */
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 50%;
+    color: #FF0080;
+}
+
+.menu li {
+    list-style: none;
+    color: #aaa;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.5rem 0.7rem;
+    text-transform: uppercase;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.4rem 0.6rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+    /* border-radius: 30px; */
+    /* color: gray; */
+    color: #301B3F;
+}
+
+/* ---------------------------------------section below navbar--------------------------------------------------------------- */
+
+.sec {
+    /* background:linear-gradient(rgb(240,240,240,0.1),rgb(255,240,240,0.3)),url("img3.jfif") ; */
+    background: url("img3.jfif");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+}
+
+.seccon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    color: snow;
+}
+
+.seccon h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.seccon p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC 51%, #FC354C 100%)
+}
+
+.btn {
+    margin: 1rem;
+    padding: 1rem 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+    /* background-size: 100% auto; */
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    outline: none;
+    position: relative;
+}
+
+.btn:hover {
+    background-position: center center;
+    /* change the direction of the change here */
+    color: rgb(45, 72, 194);
+    text-decoration: none;
+    background: #0ABFBC 51%;
+}
+
+/* .btn[title]:hover::after {
+    content: "resume here !";
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    color: rgb(179, 175, 175);
+    text-transform: capitalize;
+    display: block;
+    width: 100%;
+    margin-top: 0.4rem;
+  } */
+
+/* --------------------------------------------------about---------------------------------------------------- */
+
+.about {
+    /* border: 2px solid rgb(253, 207, 207); */
+    padding: 3rem 0;
+    background: rgba(128, 128, 128, 0.315);
+    overflow-x: hidden;
+    /*no horizontalbar comes while reload as animation is use inwhich transale isuse morethan screenwidth value*/
+    /*no horizontalbar comes while reload as animation is use inwhich transale isuse morethan screenwidth value*/
+}
+
+.aboutc {
+    display: flex;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    /* box-shadow: 0px 0px 5px 0 #f4f4f4; */
+}
+
+.about .hed {
+    text-align: center;
+    margin: 0.4rem 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.textc h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #0f9b0f;
+    text-transform: uppercase;
+}
+
+.textc h1 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.textc p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: #0f9b0f;
+    text-transform: capitalize;
+}
+
+.textc {
+    flex: 1 1 500px;
+    padding: 1.3rem 0.5rem 3.2rem;
+    /* border: 2px solid yellow; */
+    margin: 0.2rem auto;
+    transform: translatex(-125%);
+    /*-160% this can be (160% 0r150%) acc. but more value given then is will notapear go outsidescreen*/
+    animation: frst 0.4s ease-in-out forwards;
+}
+
+@keyframes frst {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* both .textc and .imga transform translate (value and direction  x/y) can be given same or different  */
+
+.imga {
+    flex: 1 1 400px;
+    padding: 1rem 0.5rem;
+    /* border: 2px solid blue; */
+    /* text-align: center; */
+    /* height: 300px; */
+    /* background:linear-gradient(rgb(0,0,0,0.2), rgba(0, 85, 0, 0.055)); */
+    transform: translateX(125%);
+    /*160% this can be (-160% 0r-150%) acc. but more value given then is will notapear go outsidescreen*/
+    animation: frs 0.4s ease-in-out forwards;
+}
+
+@keyframes frs {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.imga img {
+    max-width: 85%;
+    width: 100%;
+    /* width:100%;/px & max width in px/% */
+    max-height: 180px;
+    min-height: 180px;
+    /* max-height: 100%; */
+    object-fit: cover;
+    object-position: 50% 30%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    filter: drop-shadow( 0px 0px 10px 0 #af1010);
+}
+
+.aboutc .textc h2::after {
+    content: '';
+    display: block;
+    border-bottom: 3.8px solid #a7aaaa;
+    margin: 0.18rem auto 2rem auto;
+    min-width: 90px;
+    width: 20vw;
+    max-width: 15%;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* -----------------------------------------------------------------------------section2------------------------------------------- */
+
+.edu {
+    /* border:2px solid indigo; */
+    padding: 3rem 0 5rem;
+    background: rgba(0, 0, 0, 0.116);
+}
+
+.hed1 {
+    text-align: center;
+    margin: 0.4rem 0 1.2rem 0;
+    text-transform: uppercase;
+}
+
+/* .educ1{
+    border: 2px solid red;
+    
+} */
+
+.cen {
+    text-align: center;
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+/* .educ2{
+    border: 2px solid green;
+   
+} */
+
+/* .educ3{
+    border: 2px solid orange;
+    
+} */
+
+.educ {
+    display: flex;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* border: 2px solid gray; */
+}
+
+.educi {
+    /* border: 1px dotted black; */
+    position: relative;
+    margin: 0 1rem;
+    overflow-x: auto;
+    max-width: 330px;
+    /*height: 300px; */
+}
+
+.educ img {
+    max-height: 250px;
+    width: 100%;
+    /* height: 100%; */
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.educt {
+    position: absolute;
+    top: 20%;
+    /*if want from bottom to up then top vale more*/
+    left: 50%;
+    /* border: 1px solid pink; */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+    /* width: 100%; */
+}
+
+.edup {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.726);
+    margin-bottom: 0.5rem;
+}
+
+.educt h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.educt p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.educi::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    /* alternative like if some heading writeen above educi and shodow apers of overlay effect
+    width/hieht can be acc.50%/60% and top/bottom/left/right(0) can be set acc. then (no need transform in this or in hover)and in hover change these acc.  */
+    opacity: 0;
+    z-index: 1;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.6));
+    /* transform:scaleX/Y(0/1/2);can be used and overflow in .educ must done acc.  */
+    /* transform:translateY(-30%);*/
+    /*from top to bottom if want bottom to top use scaleY(0)*/
+    /* transform-origin: 100% 100%;          /* when ever use scaleX/Yuse this and if want window like then don't use it*/
+    transition: all 0.4s ease-in-out;
+}
+
+.educi:hover::after {
+    /* transform:scaleX/Y(1/2);can be used but in this 0 value cannot be used on hover */
+    opacity: 1;
+    /* transform: translateY(0)*/
+    /*from top to bottom if want bottom to top use scaleY(1)*/
+    height: 100%;
+    /* alernative if want  */
+    width: 100%;
+}
+
+.educi:hover .educt {
+    opacity: 1;
+    top: 50%;
+    /*if want from bottom to up then top vale less*/
+}
+
+/* ----------------------------------------------------------skills------------------------------------------------------- */
+
+.sk {
+    /* border: 2px solid red; */
+    padding: 2.5rem 0 0rem;
+    background: #b1a38956;
+    /* background-color: #8EC5FC; */
+    /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+    /* background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%); */
+}
+
+.skh {
+    text-align: center;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.skl {
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 1.5rem 0;
+    /* background: #fff; */
+}
+
+.sklc {
+    /* border: 2px solid yellow; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex: 1 1 460px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.sklc img {
+    display: block;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left center;
+    /* transition: all 0.3s ease-in-out cubic-bezier(0.59, 0.575, 0.765, 2) ; */
+}
+
+/* .sklc img:hover{ 
+    transform: scaleX(1);
+    border-radius:20px;
+    cursor: pointer;
+  }  */
+
+.sklt {
+    text-align: center;
+    /* margin: auto; */
+    margin: auto 0.2rem;
+    min-width: 150px;
+    /* padding: 1.5rem 1rem; */
+    /* border: 2px solid green; */
+    /* background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%); */
+    box-shadow: 0 3px 5px 0 rgba(128, 128, 128, 0.603);
+    outline: none;
+    border: none;
+}
+
+.sklt h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sklt p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: rgb(236, 76, 13);
+}
+
+.skh::after {
+    content: '';
+    display: block;
+    border-bottom: 4px solid #FF0080;
+    margin: 0.18rem auto 0 auto;
+    min-width: 78px;
+    width: 8vw;
+    max-width: 15%;
+    text-align: center;
+    border-radius: 100%;
+}
+
+/* ---------------------------------------------------extra---------------------------------------------------- */
+
+.ex {
+    /* border: 2px solid green; */
+    background: rgba(243, 243, 243);
+    padding: 2.5rem 1.3rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.exc {
+    /* border: 2px solid rgb(13, 0, 128); */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-top: 0.7rem;
+}
+
+.exca {
+    /* border: 2px solid rgb(35, 41, 35); */
+    text-align: center;
+    max-width: 340px;
+    padding: 1rem;
+    margin: 0.7rem;
+    /* transform: translateX(-60%); */
+    /* animation:excs 2s ease-in-out forwards; */
+    /* flex-basis: 400px; */
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    margin-bottom: 1rem;  */
+}
+
+/* @keyframes excs {
+    100%{
+        transform: translateX(0);
+    }
+    
+} */
+
+.exca:hover {
+    box-shadow: 0 2px 4px 0 rgba(68, 68, 68, 0.37);
+    /* transform: scale(1.1,1.1); */
+}
+
+.exca img {
+    display: block;
+    height: 80px;
+    width: 90px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.hara {
+    text-transform: uppercase;
+}
+
+.para {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #555;
+}
+
+.para1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.imge {
+    margin: auto;
+}
+
+/* -------------------------------------social----------------------------------------------- */
+
+.cont {
+    /* border: 2px solid red; */
+    padding: 2.6rem 0;
+}
+
+.con a {
+    text-decoration: none;
+    color: #444;
+}
+
+.contc {
+    /* border:2px solid indigo; */
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 1 1 20%;
+}
+
+.con {
+    color: #444;
+    padding: 0.3rem;
+}
+
+.con2 a:hover {
+    text-decoration: none;
+    color: #fa5788;
+}
+
+.con1 a:hover {
+    text-decoration: none;
+    color: rgb(12, 223, 12);
+}
+
+.con3 a:hover {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.con4 a:hover {
+    text-decoration: none;
+    color: rgb(6, 175, 253);
+}
+
+.con5 a:hover {
+    text-decoration: none;
+    color: rgb(12, 33, 223);
+}
+
+.con1:hover {
+    color: rgb(12, 223, 12);
+    box-shadow: 0 5px 8px 0 #16A085;
+    /* background: grey; */
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+}
+
+.con2:hover {
+    color: #fa5788;
+    box-shadow: 0 5px 10px 0 #f14cc0;
+    /* background: rgb(184, 111, 17); */
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    /* border-radius: 30px; */
+}
+
+.con3:hover {
+    color: #ff0000;
+    box-shadow: 0 3px 10px 0 rgba(130, 5, 255, 1);
+    background: #ff008011;
+    /* background: grey; */
+    /* background-image: linear-gradient( 76.9deg,  rgba(255,90,90,1) 27.2%, rgba(130,5,255,1) 79.9% ); */
+}
+
+.con4:hover {
+    color: rgb(6, 175, 253);
+    box-shadow: 0 5px 10px 0 rgb(6, 175, 253);
+    /* background: grey; */
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.con5:hover {
+    color: rgb(12, 33, 223);
+    box-shadow: 0 5px 10px 0 rgb(12, 33, 223);
+    /* background: grey; */
+    background-color: #0094e9c2;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.cont1 {
+    display: none;
+}
+
+/* -------------------------------------------------------------------media---------------------------- */
+
+@media only screen and (max-width: 977px) and (min-width: 751px) {
+    .exca {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 948px) {
+    .educ {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .educi {
+        margin-bottom: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .educ img {
+        min-height: 200px;
+        width: 100%;
+        /* height: 100%; */
+        display: block;
+        margin: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+    .educt {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 497px) {
+    .sklc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sklt {
+        margin-top: 1rem;
+    }
+    .box2 {
+        width: 100%;
+        margin: auto;
+    }
+    .exca {
+        text-align: center;
+        max-width: 450px;
+        padding: 1rem;
+        margin: 0.7rem 0.1rem;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.829);
+        color: #f4f4f4;
+    }
+    .exca .para {
+        color: #fff;
+    }
+    .con i{
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .exc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .exca {
+        margin-bottom: 0.5rem;
+        background: rgba(0, 0, 0, 0.829);
+        color: #f4f4f4;
+    }
+    .exca .para {
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    /* .nact {
+        display: none;
+    }
+    .act {
+        display: block;
+        padding: 2rem 0;
+    } */
+    .cont .box1 {
+        max-height: 385px;
+        width: 95%;
+        margin: auto;
+    }
+    .con i{
+        font-size: 28px;
+    }
+    .box2 {
+        width: 100%;
+        margin: auto;
+    }
+    .exca {
+        text-align: center;
+        max-width: 380px;
+        padding: 1rem;
+        margin: 0.7rem 0.1rem;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.829);
+        color: #f4f4f4;
+    }
+    .exca .para {
+        color: #fff;
+    }
+    .sklc img:hover {
+        transform: scaleX(1);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+/* @media (orientation:landscape) and (min-height:520) {
+    .sec {
+        height: 75vh;
+    }
+    .nac {
+        height: 17vh;
+    }
+} */
+
+@media only screen and (max-height: 500px){
+    .sec{
+        height: 78vh;
+    }
+    .navc{
+        height:11vh ;
+    }
+  }
+@media only screen and (max-height: 364px){
+    .sec{
+        height: 83vh;
+    }
+    .navc{
+        height:13vh ;
+    }
+  }
+@media only screen and (max-height: 270px){
+    .sec{
+        height: 93vh;
+    }
+    .navc{
+        height:15vh ;
+    }
+  }
