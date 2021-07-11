@@ -755,6 +755,10 @@ body {
         background: rgba(0, 0, 0, 0.829);
         color: #f4f4f4;
     }
+    .exca:hover {
+    box-shadow: 0 4px 6px 0 rgba(68, 68, 68, 0.37);
+    /* transform: scale(1.1,1.1); */
+}
     .exca .para {
         color: #fff;
     }
@@ -808,6 +812,10 @@ body {
         background: rgba(0, 0, 0, 0.829);
         color: #f4f4f4;
     }
+    .exca:hover {
+    box-shadow: 0 4px 6px 0 rgba(68, 68, 68, 0.37);
+    /* transform: scale(1.1,1.1); */
+}
     .exca .para {
         color: #fff;
     }
