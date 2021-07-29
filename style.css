@@ -692,6 +692,25 @@ body {
     background-color: #0094e9c2;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
+.con1:hover.con1 a {
+    color: rgb(12, 223, 12);
+}
+
+.con2:hover.con2 a {
+    color: #fa5788;
+}
+
+.con3:hover.con3 a {
+    color: #ff0000;
+}
+
+.con4:hover.con4 a {
+    color: rgb(6, 175, 253);
+}
+
+.con5:hover.con5 a {
+    color: rgb(12, 33, 223);
+}
 
 .cont1 {
     display: none;
